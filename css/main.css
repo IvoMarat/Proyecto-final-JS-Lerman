@@ -51,6 +51,7 @@ a {
 
 .botonera{
     display: flex;
+    margin-bottom: 10px;
 }
 
 .botonera ul {
@@ -69,6 +70,19 @@ a {
     border-radius: 30px;
     text-transform: uppercase;
     cursor: pointer;
+    border: 2px solid var(--color-main);
+}
+
+.boton-menu:hover{
+    background-color: gray;
+    box-shadow: 0 0 30px var(--color-main);
+    border: 2px solid var(--color-main);
+}
+
+.boton-volver{
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 22px;
 }
 
 .boton-carrito{
@@ -138,6 +152,7 @@ a {
     padding: 5px;
     width: 100%;
     padding-bottom: 5px;
+    gap: 5px;
 }
 .producto-titulo{
     color: white;
@@ -229,11 +244,13 @@ a {
 
 .carrito-acciones-vaciar{
     color: black;
+    border-color: white;
     background-color: #f5cb5c;
-    padding: 5px;
+    padding: 10px;
     border-radius: 30px;
     text-transform: uppercase;
     cursor: pointer;
+    border: 2px solid var(--color-white);
 }
 
 .carrito-acciones-vaciar:hover{
@@ -254,11 +271,13 @@ a {
 
 .carrito-acciones-comprar{
     color: black;
+    border-color: white;
     background-color: #f5cb5c;
-    padding: 5px;
+    padding: 10px;
     border-radius: 30px;
     text-transform: uppercase;
     cursor: pointer;
+    border: 2px solid var(--color-white);
 }
 
 .carrito-acciones-comprar:hover{
@@ -274,4 +293,23 @@ a {
 
 .disabled{
     display: none;
+}
+
+/* librerias  */
+.swal2-popup {
+    color: white !important;
+    background: var(--color-black) !important;
+    box-shadow: 0 0 20px var(--color-black) !important;
+}
+
+
+.swal2-styled.swal2-confirm  {
+    background-color: var(--color-main) !important;
+    color: black !important; 
+    box-shadow: 0 0 30px #f5cb5c !important;
+}
+
+.toastify {
+    border-radius: 5px;
+    box-shadow: 0 0 30px #f5cb5c !important;
 }

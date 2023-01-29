@@ -163,7 +163,7 @@ function actualizarBotonesAgregar () {
 
 
 let productosEnCarrito
-let productosEnCarritoLS =localStorage.getItem("productos-en-carrito")
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito")
 
 
 if(productosEnCarritoLS){
